@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+@layer base {
+  :root {
+    /* Core Theme */
+    --background: 0 80% 45%;          /* Red background */
+    --foreground: 0 0% 100%;          /* White text */
+
+    --card: 0 0% 100%;                /* White cards */
+    --card-foreground: 220 80% 40%;   /* Blue text/icons */
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 80% 40%;
+
+    --primary: 0 80% 45%;             /* Red primary */
+    --primary-foreground: 0 0% 100%;  /* White text */
+
+    --secondary: 220 80% 40%;         /* Blue secondary */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 95%;                /* Light gray/white muted */
+    --muted-foreground: 220 20% 40%;  /* Soft blue-gray text */
+
+    --accent: 220 80% 40%;            /* Blue accents */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;         /* Bright red for alerts */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 85%;               /* Light border */
+    --input: 0 0% 85%;
+    --ring: 220 80% 40%;              /* Blue focus ring */
+
+    --radius: 2px;
+
+    
+    /* Custom tokens - Handtalk Theme */
+    --leather-brown: 358, 89%, 37%;        /* Strong red */
+    --leather-brown-light: 0 70% 65%;  /* Lighter red for accents */
+    --leather-brown-dark: 0 90% 25%;   /* Deep red for contrast */
+
+    --cream-white: 65, 100%, 96%;          /* Pure white */
+    --warm-white: 65, 100%, 96%;            /* Slightly off-white for softer backgrounds */
+
+    --charcoal: 214, 100%, 72%;           /* Bold blue for text/icons */
+    --tan: 207, 67%, 32%;                /* Light blue for softer accents */
+    --espresso: 220 90% 20%;  
+    
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--handtalk-red) / 0.9), hsl(var(--handtalk-blue) / 0.85));
+    --gradient-card: linear-gradient(180deg, hsl(var(--handtalk-white)), hsl(var(--muted)));
+
+
+    
+    /* Shadows */
+    --shadow-card: 0 10px 40px hsl(var(--handtalk-blue) / 0.15);
+    --shadow-button: 0 4px 20px hsl(var(--handtalk-red) / 0.3);
+
+    
+    --sidebar-background: 0 80% 45%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 220 80% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 100%;
+    --sidebar-accent-foreground: 220 80% 40%;
+    --sidebar-border: 0 0% 85%;
+    --sidebar-ring: 220 80% 40%;
+
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-montserrat antialiased;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-leather-brown to-leather-brown-light;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:translate-y-[-4px] hover:shadow-card;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+
+  .container-padding {
+    @apply px-4 md:px-8 lg:px-16;
+  }
+
+  .leather-texture {
+    background-image: 
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    background-blend-mode: soft-light;
+  }
+
+  .barber-tools-bg {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%235a4030' stroke-width='0.5' opacity='0.08'%3E%3Cpath d='M20,10 L20,30 M15,15 L25,15 M15,25 L25,25'/%3E%3Cpath d='M60,15 Q70,15 70,25 Q70,35 60,35 Q50,35 50,25 Q50,15 60,15 M55,35 L55,45 M65,35 L65,45'/%3E%3Cpath d='M80,60 L90,60 L90,90 L80,90 Z M82,65 L88,65 M82,70 L88,70 M82,75 L88,75'/%3E%3Cpath d='M30,55 L50,55 M35,50 L35,60 M45,50 L45,60'/%3E%3Cpath d='M15,70 C15,65 25,65 25,70 L25,85 L15,85 Z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .scissors-bg {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%235a4030' stroke-width='0.8' opacity='0.06'%3E%3Ccircle cx='20' cy='20' r='8'/%3E%3Ccircle cx='20' cy='60' r='8'/%3E%3Cpath d='M28,20 L52,60'/%3E%3Cpath d='M28,60 L52,20'/%3E%3Cpath d='M52,35 L70,35 M52,45 L70,45'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .comb-bg {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60' viewBox='0 0 120 60'%3E%3Cg fill='none' stroke='%235a4030' stroke-width='0.6' opacity='0.05'%3E%3Crect x='10' y='20' width='100' height='20' rx='2'/%3E%3Cpath d='M15,20 L15,10 M25,20 L25,10 M35,20 L35,10 M45,20 L45,10 M55,20 L55,10 M65,20 L65,10 M75,20 L75,10 M85,20 L85,10 M95,20 L95,10 M105,20 L105,10'/%3E%3Cpath d='M15,40 L15,50 M25,40 L25,50 M35,40 L35,50 M45,40 L45,50 M55,40 L55,50 M65,40 L65,50 M75,40 L75,50 M85,40 L85,50 M95,40 L95,50 M105,40 L105,50'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .razor-bg {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%235a4030' stroke-width='0.6' opacity='0.05'%3E%3Cpath d='M30,20 L70,20 L75,30 L25,30 Z'/%3E%3Crect x='35' y='30' width='30' height='50' rx='3'/%3E%3Cpath d='M40,40 L60,40 M40,50 L60,50 M40,60 L60,60 M40,70 L60,70'/%3E%3C/g%3E%3C/svg%3E");
+  }
+}
