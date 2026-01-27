@@ -80,7 +80,7 @@ const HeroSection = () => {
               <div className="text-sm text-cream-white/70 uppercase tracking-wider mt-1">Years Experience</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-black text-cream-white">10K+</div>
+              <div className="text-3xl md:text-4xl font-black text-cream-white">500+</div>
               <div className="text-sm text-cream-white/70 uppercase tracking-wider mt-1">Happy Clients</div>
             </div>
             <div>

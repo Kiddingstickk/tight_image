@@ -1,6 +1,6 @@
-import barber1 from "@/assets/barber-1.jpg";
-import barber2 from "@/assets/barber-2.jpg";
-import barber3 from "@/assets/barber-3.jpg";
+import barber1 from "@/assets/afro.png";
+import barber2 from "@/assets/barber-1.jpg";
+import barber3 from "@/assets/afroo.png";
 import { Instagram } from "lucide-react";
 
 const barbers = [
