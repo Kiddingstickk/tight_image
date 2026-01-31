@@ -1,6 +1,6 @@
 import barber1 from "@/assets/afro.png";
-import barber2 from "@/assets/barber-1.jpg";
-import barber3 from "@/assets/afroo.png";
+import barber2 from "@/assets/afroo.png";
+import barber3 from "@/assets/barber-3.jpg";
 import { Instagram } from "lucide-react";
 
 const barbers = [
@@ -59,8 +59,8 @@ const BarbersSection = () => {
 
             {/* Info */}
             <div className={`lg:w-1/2 ${index % 2 === 1 ? "lg:text-right" : "lg:text-left"} text-center`}>
-              <h3 className="text-3xl md:text-4xl font-bold text-primary mb-2">{barber.name}</h3>
-              <p className="text-tan font-semibold uppercase text-sm tracking-wider mb-4">
+              <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-2">{barber.name}</h3>
+              <p className="text-leather-brown font-semibold uppercase text-sm tracking-wider mb-4">
                 {barber.role}
               </p>
               <p className="text-muted-foreground mb-2">{barber.experience} experience</p>
@@ -69,7 +69,7 @@ const BarbersSection = () => {
               {/* Instagram */}
               <a
                 href="#"
-                className={`inline-flex items-center gap-2 text-primary hover:text-black transition-colors ${
+                className={`inline-flex items-center gap-2 text-foreground hover:text-leather-brown transition-colors ${
                   index % 2 === 1 ? "lg:flex-row-reverse" : ""
                 }`}
               >

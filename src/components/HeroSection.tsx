@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
-import reddd from "@/assets/tight_image_hero.jpg";
+import reddd from "@/assets/guiii-modified1.png";
 import { motion } from "framer-motion";
 import { Scissors } from "lucide-react";
 
 const HeroSection = () => {
-  const words = ["TIGHT IMAGE", "BARBERSHOP"];
+  const words = ["BARBERSHOP", "@241 PEACHTREE"];
 
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
@@ -76,15 +76,15 @@ const HeroSection = () => {
             style={{ animationDelay: "0.6s" }}
           >
             <div>
-              <div className="text-3xl md:text-4xl font-black text-cream-white">15+</div>
+              <div className="text-3xl md:text-4xl font-black text-cream-white">5+</div>
               <div className="text-sm text-cream-white/70 uppercase tracking-wider mt-1">Years Experience</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-black text-cream-white">500+</div>
+              <div className="text-3xl md:text-4xl font-black text-cream-white">1000+</div>
               <div className="text-sm text-cream-white/70 uppercase tracking-wider mt-1">Happy Clients</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-black text-cream-white">4.5★</div>
+              <div className="text-3xl md:text-4xl font-black text-cream-white">5.0★</div>
               <div className="text-sm text-cream-white/70 uppercase tracking-wider mt-1">Average Rating</div>
             </div>
           </div>

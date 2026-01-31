@@ -1,9 +1,9 @@
-import gallery1 from "@/assets/work2_tight_image.jpg";
-import gallery2 from "@/assets/work_tight_image.jpg";
-import gallery3 from "@/assets/workkkkk.jpg";
-import gallery4 from "@/assets/wokk.jpg";
-import gallery5 from "@/assets/workk.jpg";
-import gallery6 from "@/assets/finalwokk.jpg";
+import gallery1 from "@/assets/Screenshot (271).png";
+import gallery2 from "@/assets/Screenshot (270).png";
+import gallery3 from "@/assets/gallery-3.jpg";
+import gallery4 from "@/assets/gallery-4.jpg";
+import gallery5 from "@/assets/gallery-5.jpg";
+import gallery6 from "@/assets/gallery-6.jpg";
 
 const galleryImages = [
   { src: gallery1, alt: "Precision fade haircut in progress" },

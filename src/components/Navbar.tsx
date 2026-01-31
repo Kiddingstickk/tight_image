@@ -40,7 +40,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#home" className="text-red-600 font-bold text-2xl tracking-tight">
-            TIGHT IMAGE
+          BARBERSHOP
           </a>
 
           {/* Desktop Navigation */}
@@ -59,11 +59,11 @@ const Navbar = () => {
           {/* Phone & CTA */}
           <div className="hidden lg:flex items-center gap-6">
             <a
-              href="tel:+15551234567"
+              href="tel:+13106941853"
               className="flex items-center gap-2 text-red-600 hover:text-blue-900 transition-colors"
             >
               <Phone className="w-4 h-4" />
-              <span className="font-semibold">+1 410-8377-776</span>
+              <span className="font-semibold">+13106941853</span>
             </a>
             <Button
               size="sm"
@@ -103,11 +103,11 @@ const Navbar = () => {
                 </a>
               ))}
               <a
-                href="tel:+1 410-8377-776"
+                href="tel:+13106941853"
                 className="flex items-center gap-2 text-red-600 py-2"
               >
                 <Phone className="w-4 h-4" />
-                <span className="font-semibold">+1 410-8377-776</span>
+                <span className="font-semibold">+13106941853</span>
               </a>
               <Button
                 className="bg-red-600 text-white hover:bg-blue-950 w-full mt-2 font-bold"

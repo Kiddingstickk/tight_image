@@ -7,20 +7,20 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold text-primary mb-6">Tight Image.</h3>
+            <h3 className="text-2xl font-bold text-primary mb-6">BarberShop @241 PeachTree</h3>
             <p className="text-tan leading-relaxed mb-6">
-              A premium grooming experience. Established 2010.
+              A premium grooming experience for the modern man. Established 2010.
             </p>
             <div className="flex gap-4">
               <a
-                href="https://www.instagram.com/tightimagebarbershop/?utm_source=ig_web_button_share_sheet"
+                href="https://www.instagram.com/barbershop241peachtree/"
                 className="w-10 h-10 bg-leather-brown flex items-center justify-center hover:bg-leather-brown-light transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5 text-cream-white" />
               </a>
               <a
-                href="https://www.facebook.com/p/Tight-Image-Barber-Shop-100063556045426/"
+                href="#"
                 className="w-10 h-10 bg-leather-brown flex items-center justify-center hover:bg-leather-brown-light transition-colors"
                 aria-label="Facebook"
               >
@@ -52,15 +52,15 @@ const Footer = () => {
             <ul className="space-y-3 text-primary/70">
             <li className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-tan" />
-                <span>Monday: 3:30PM - 7PM</span>
+                <span>Monday: 9:30AM - 5PM</span>
               </li>
               <li className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-tan" />
-                <span>Tue - Fri: 10AM - 7PM</span>
+                <span>Tue - Thu: 9:30AM - 6PM</span>
               </li>
               <li className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-tan" />
-                <span>Saturday: 9:30AM - 6PM</span>
+                <span>Fri - Sat: 9:30AM - 7PM</span>
               </li>
               <li className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-tan" />
@@ -74,21 +74,22 @@ const Footer = () => {
             <h4 className="text-primary font-bold uppercase tracking-wider mb-6">Contact</h4>
             <ul className="space-y-4 text-primary/70">
               <li>
-                <a href="tel:+15551234567" className="flex items-center gap-3 hover:text-tan transition-colors">
+                <a href="tel:+13106941853" className="flex items-center gap-3 hover:text-tan transition-colors">
                   <Phone className="w-4 h-4 text-tan" />
-                  <span>+1 410-8377-776</span>
+                  <span>+13106941853</span>
                 </a>
               </li>
               <li>
                 <a href="mailto:*" className="flex items-center gap-3 hover:text-tan transition-colors">
                   <Mail className="w-4 h-4 text-tan" />
-                  <span>info@TightImage.com</span>
+                  <span>info@barbershop.com</span>
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-tan mt-1" />
                 <span>
-                427 N Eutaw St # B<br/> Baltimore, MD 21201 <br/>United States
+                241 Peachtree St NE,<br />
+                Atlanta, GA 30303<br /> United States
                 </span>
               </li>
             </ul>
@@ -102,14 +103,15 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="block w-full h-full"
           >
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12350.882976537994!2d-76.64017221284176!3d39.2945832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c804a3cc563b5b%3A0x31bf3fe76dce0ef1!2sTight%20Image!5e0!3m2!1sen!2sin!4v1767536717620!5m2!1sen!2sin" 
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3810.469393215116!2d-84.38951089918878!3d33.7606642570215!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5055c5a8d0ffb%3A0x3f1c9ec176f160ef!2sBarbershop%40241Peachtree!5e1!3m2!1sen!2sin!4v1769865882762!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </a>
         </div>
 
@@ -118,7 +120,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-leather-brown/30 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary/60 text-sm">
-            © 2024 Tight Image .  All rights reserved.
+            © 2026 BarberShop @241 PeachTree.  All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-primary/60">
             <a href="#" className="hover:text-tan transition-colors">Privacy Policy</a>

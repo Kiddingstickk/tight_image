@@ -16,7 +16,7 @@ const testimonials = [
   {
     name: "Robert Williams",
     role: "Monthly Member",
-    content: "I've been to a lot of barbershops, but Tight Image is different. The atmosphere, the skill, the service - all top tier.",
+    content: "I've been to a lot of barbershops, but Barbershop is different. The atmosphere, the skill, the service - all top tier.",
     rating: 5,
   },
 ];
@@ -34,7 +34,7 @@ const TestimonialsSection = () => {
             What Our Clients Say
           </h2>
           <p className="text-cream-white/70 text-lg">
-            Real experiences from real people
+            Real experiences from real gentlemen
           </p>
         </div>
 

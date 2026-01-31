@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Scissors, Sparkles, Flame, PenTool, Package } from "lucide-react";
-import servicesBg from "@/assets/tight_image_hero.jpg";
+import servicesBg from "@/assets/guiii-modified1.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -65,7 +65,7 @@ const ServicesSection = () => {
             Our Services
           </h2>
           <p className="text-blue-900 text-lg">
-            Premium grooming services crafted to people best .
+            Premium grooming services crafted for the modern gentleman
           </p>
         </div>
 
